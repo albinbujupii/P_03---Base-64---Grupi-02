@@ -17,3 +17,22 @@ def base64_decode(encoded_text):
         decoded += chr(int(byte, 2))
 
     return decoded
+
+   # Menu për përdoruesin
+   print("Zgjidh një veprim:")
+   print("1. Enkripto në Base64")
+   print("2. Dekripto nga Base64")
+   choice = input("Zgjedhja jote (1/2): ")
+
+   if choice == '1':
+       text = input("Shkruaj tekstin që dëshiron të enkriptohet: ")
+       encoded = base64_encode(text)
+       print("Teksti i enkriptuar:", encoded)
+
+   elif choice == '2':
+       encoded_text = input("Shkruaj tekstin e enkriptuar me Base64: ")
+       decoded = base64_decode(encoded_text)
+       print("Teksti i dekriptuar:", decoded)
+
+   else:
+       print("Zgjedhje e pavlefshme.")
