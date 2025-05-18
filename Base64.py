@@ -11,17 +11,6 @@ def base64_encode(text):
 
     encoded = ''
 
-def to_binary_string(text):
-    return ''.join(f'{ord(c):08b}' for c in text)
-
-def base64_encode(text):
-    base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    binary = to_binary_string(text)
-
-    while len(binary) % 6 != 0:
-        binary += '0'
-
-    encoded = ''
 # dekodimi i nje stringu Base64 ne tekst normal, pa perdorur klasa dhe funksione te gatshme
 def base64_decode(encoded_text):
     base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"

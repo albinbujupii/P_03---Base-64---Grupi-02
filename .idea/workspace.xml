@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c41223e-7903-4e93-affb-3d32dd741fa1" name="Changes" comment="">
+    <list default="true" id="1c41223e-7903-4e93-affb-3d32dd741fa1" name="Changes" comment="Add padding">
       <change beforePath="$PROJECT_DIR$/Base64.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base64.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +159,19 @@
       <option name="presentableId" value="Default" />
       <updated>1747497010201</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add padding">
+      <option name="closed" value="true" />
+      <created>1747567743541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747567743541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add padding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add padding" />
   </component>
 </project>
