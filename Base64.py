@@ -11,6 +11,16 @@ def base64_encode(text):
 
     encoded = ''
 
+    for i in range(0, len(binary), 6):
+        chunk = binary[i:i+6]
+        index = int(chunk, 2)
+        encoded += base64_chars[index]
+
+    padding = (3 - len(text) % 3) % 3
+    encoded += '=' * padding
+
+    return encoded
+
 # dekodimi i nje stringu Base64 ne tekst normal, pa perdorur klasa dhe funksione te gatshme
 def base64_decode(encoded_text):
     base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
@@ -31,6 +41,7 @@ def base64_decode(encoded_text):
     return decoded
 
    # Menu për përdoruesin
+if __name__ == "__main__":
    print("Zgjidh një veprim:")
    print("1. Enkripto në Base64")
    print("2. Dekripto nga Base64")
