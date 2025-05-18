@@ -20,6 +20,7 @@ def base64_encode(text):
     encoded += '=' * padding
 
     return encoded
+#
 
 # dekodimi i nje stringu Base64 ne tekst normal, pa perdorur klasa dhe funksione te gatshme
 def base64_decode(encoded_text):
